@@ -1,0 +1,16 @@
+{
+  "name": "wei-blog",
+  "version": "1.0.0",
+  "description": "Wei Personal Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Front",
+    "End",
+    "Developer"
+  ],
+  "author": "Wei Kee",
+  "license": "ISC"
+}
