@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom';
 const ArchivesItem = (props) => {
     console.log(props);
     return (
-        <div>
+        <div className="blog-archives-items">
             Archives with id of {props.match.params.id}
-            <NavLink to="/archives">Go Back</NavLink>
+            <NavLink className="back-home" to="/archives">
+                <div className="back-home_title">Go Back</div>
+            </NavLink>
         </div>
     );
 };
