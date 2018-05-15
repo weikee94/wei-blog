@@ -1,0 +1,20 @@
+.blog-initProject {
+    .babel-section, .webpack-config, .npm-modules {
+        .markdown-title {
+            color: #eee;
+            font-size: 1rem;
+            &:before {
+                color: #2bbc8a;
+                content: "#";
+                font-weight: bold;
+                font-size: 1.2rem;
+                padding-right: 7px;
+            }
+        }
+        .markdown-sect {
+            border: 1px dotted #666;
+            // background-color: #474949;
+            width: 50%;
+        }
+    }
+}
