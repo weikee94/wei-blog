@@ -1,6 +1,6 @@
 import Markdown from 'markdown-to-jsx';
 import React from 'react';
-import '../components/initProject.scss';
+import '../post/initProject.scss';
 const ReactMarkdown = require('react-markdown')
 
 const input = '# This is a header\n\nAnd this is a paragraph'

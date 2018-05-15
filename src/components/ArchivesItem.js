@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import InitProject from '../components/InitProject';
+import InitProject from '../post/InitProject';
 
 const ArchivesItem = (props) => {
     console.log(props.match.params.id);
