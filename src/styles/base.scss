@@ -3,6 +3,9 @@
 html, body {
     background: $color-background;
     font-family: "Menlo", "Meslo LG", monospace;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .is-active {
@@ -46,6 +49,7 @@ html, body {
 .blog-home {
     color: $color-text;
     padding-left: 40px;
+    text-align: justify;
 }
 
 .blog-about {

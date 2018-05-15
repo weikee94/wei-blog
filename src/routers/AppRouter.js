@@ -8,6 +8,7 @@ import ArchivesItem from '../components/ArchivesItem';
 import Contact from '../components/Contact';
 import NotFound from '../components/NotFound';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 // stateless function component
 const AppRouter = () => (
@@ -22,6 +23,7 @@ const AppRouter = () => (
                 <Route path="/contact" component={Contact} />
                 <Route component={NotFound} />
             </Switch>
+            <Footer />
         </div>
     </BrowserRouter>
 );
