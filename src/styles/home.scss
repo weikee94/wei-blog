@@ -9,7 +9,7 @@
         text-decoration: none;
     }
 
-    .archives-section {
+    .archives-section, .explore-section {
         margin-top: 3rem;
         .title {
             margin-bottom: 1rem;
@@ -30,6 +30,14 @@
                 .post-title {
                     line-height: 1.75;
                     text-decoration: underline;
+                }
+            }
+        }
+        .explore-item {
+            li {
+                text-decoration: underline;
+                a {
+                    color: #c9cacc;
                 }
             }
         }

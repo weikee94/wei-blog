@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/home.scss';
 
 const Home = () => {
@@ -20,9 +21,32 @@ const Home = () => {
                     <li className="item">
                         <div>
                             <span className="post-time">01 May 2018</span>
-                            <span className="post-title"><a href="../archives/1">Init Project</a></span>
+                            <span className="post-title">
+                                <NavLink className="back-home" to="../archives/1">
+                                    <span>Init React Project</span>
+                                </NavLink>
+                            </span>
                         </div>
                     </li>
+                    <li className="item">
+                        <div>
+                            <span className="post-time">19 April 2018</span>
+                            <span className="post-title">
+                                <NavLink className="back-home" to="../archives/2">
+                                    <span>Tools Using</span>
+                                </NavLink>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="explore-section">
+                <p className="title">Explore Playground</p>
+                <ul className="explore-item">
+                    <li><a href="https://www.apollographql.com/">Apollo - GraphQL over REST</a></li>
+                    <li><a href="https://graphql.org/">GraphQL - GraphQL is a query language for APIs</a></li>
+                    <li><a href="https://neo4j.com/">Neo4j - The graph database platform</a></li>
                 </ul>
             </div>
         </div>

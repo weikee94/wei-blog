@@ -2,14 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import InitProject from '../post/InitProject';
+import Tools from '../post/Tools';
 
 const ArchivesItem = (props) => {
-    console.log(props.match.params.id);
+    // console.log(props.match.params.id);
     let postContent;
     if (props.match.params.id == 1) {
         postContent = (
             <div className="blog-archives-items">
-                Archives with id of {props.match.params.id}
+                {/* Archives with id of {props.match.params.id} */}
                 <InitProject />
                 <NavLink className="back-home" to="/archives">
                     <div className="back-home_title">Go Back</div>
@@ -19,8 +20,8 @@ const ArchivesItem = (props) => {
     } else if (props.match.params.id == 2) {
         postContent = (
             <div className="blog-archives-items">
-                Archives with id of {props.match.params.id}
-
+                {/* Archives with id of {props.match.params.id} */}
+                <Tools />
                 <NavLink className="back-home" to="/archives">
                     <div className="back-home_title">Go Back</div>
                 </NavLink>

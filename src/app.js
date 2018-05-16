@@ -4,7 +4,5 @@ import AppRouter from './routers/AppRouter';
 import WeiBlog from './components/WeiBlog';
 import './styles/base.scss';
 
-console.log('test');
-
 ReactDOM.render(<AppRouter />, document.getElementById('app'));
 
