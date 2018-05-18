@@ -15,6 +15,11 @@ const Archives = (props) => {
                         <span>Tools Using</span>
                     </li>
                 </NavLink>
+                <NavLink className="blog-archives__subtitle" to="/archives/3">
+                    <li style={{textDecoration: 'underline'}}>
+                        <span>Vue Basics</span>
+                    </li>
+            </NavLink>
             </ul>
         </div>
     );
