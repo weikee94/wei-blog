@@ -6,7 +6,15 @@ const sectionOne = '`<p v-text="title"></p>`';
 const sectionTwo = '`<p v-html="title"></p>`';
 const sectionThree = '`<p v-if="isShow"></p>`';
 const sectionFour = '`<p v-show="isShow"></p>`';
-const sectionFive ='`<ul>\n <li v-for="item in arr">\n {{ item }}</li></ul>`'
+const sectionFive ='<ul>\n <li v-for="item in arr">\n  {{ item }}\n </li>\n</ul>';
+
+const sectionSix = '<p v-on:click="speak">click Me</p>\n<p @click="speak">second method</p>';
+const sectionSeven = '<p class="view" v-bind:class="{active:isActive}">\n {{msg}}\n</p>';
+
+const sectionEight = '<input v-model="content" />\n<p>{{ content }}</p>';
+
+const sectionNine = '<script type="text/javascript">\n var app = new Vue({\n  el: ".view",\n  data: {},\n  methods: {},\n  computed: {},\n  watch: {}\n })\n</script>';
+
 const VueLearning = () => {
     return (
         <div>
@@ -111,6 +119,82 @@ const VueLearning = () => {
                     </table>
                 </figure>
             </div>
+
+            <div className="sectionFour">
+                事件绑定
+                <figure class="highlight">
+                    <figcaption>
+                        <span className="title">v-on @</span>
+                        <a className="file">.vue</a>
+                    </figcaption>
+                    <table>
+                        <tbody><tr>
+                            <td className="code">
+                                <pre>
+                                    <ReactMarkdown source={sectionSix} />
+                                </pre>
+                            </td>
+                        </tr></tbody>
+                    </table>
+                </figure>
+            </div>
+
+            <div className="sectionFive">
+                样式绑定
+                <figure class="highlight">
+                    <figcaption>
+                        <span className="title">v-bind</span>
+                        <a className="file">.vue</a>
+                    </figcaption>
+                    <table>
+                        <tbody><tr>
+                            <td className="code">
+                                <pre>
+                                    <ReactMarkdown source={sectionSeven} />
+                                </pre>
+                            </td>
+                        </tr></tbody>
+                    </table>
+                </figure>
+			</div>
+
+			<div className="sectionSix">
+				双向数据绑定
+				<figure class="highlight">
+					<figcaption>
+						<span className="title">v-model</span>
+						<a className="file">.vue</a>
+					</figcaption>
+					<table>
+						<tbody><tr>
+							<td className="code">
+								<pre>
+									<ReactMarkdown source={sectionEight} />
+								</pre>
+							</td>
+						</tr></tbody>
+					</table>
+				</figure>
+			</div>
+
+			<div className="sectionSeven">
+				组件结构
+				<figure class="highlight">
+					<figcaption>
+						<span className="title">vue component structure</span>
+						<a className="file">.vue</a>
+					</figcaption>
+					<table>
+						<tbody><tr>
+							<td className="code">
+								<pre>
+									<ReactMarkdown source={sectionNine} />
+								</pre>
+							</td>
+						</tr></tbody>
+					</table>
+				</figure>
+			</div>
         </div>
     )
 }
