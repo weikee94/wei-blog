@@ -20,7 +20,7 @@ const VueLearning = () => {
         <div>
             <div className="sectionOne">
                 数据渲染
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-text</span>
                         <a className="file">.vue</a>
@@ -38,7 +38,7 @@ const VueLearning = () => {
                         </tr></tbody>
                     </table>
                 </figure>
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-html</span>
                         <a className="file">.vue</a>
@@ -60,7 +60,7 @@ const VueLearning = () => {
 
             <div className="sectionTwo">
                 控制模块显示
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-if</span>
                         <a className="file">.vue</a>
@@ -78,7 +78,7 @@ const VueLearning = () => {
                         </tr></tbody>
                     </table>
                 </figure>
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-show</span>
                         <a className="file">.vue</a>
@@ -100,7 +100,7 @@ const VueLearning = () => {
 
             <div className="sectionThree">
                 渲染列表
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-for</span>
                         <a className="file">.vue</a>
@@ -122,7 +122,7 @@ const VueLearning = () => {
 
             <div className="sectionFour">
                 事件绑定
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-on @</span>
                         <a className="file">.vue</a>
@@ -141,7 +141,7 @@ const VueLearning = () => {
 
             <div className="sectionFive">
                 样式绑定
-                <figure class="highlight">
+                <figure className="highlight">
                     <figcaption>
                         <span className="title">v-bind</span>
                         <a className="file">.vue</a>
@@ -160,7 +160,7 @@ const VueLearning = () => {
 
 			<div className="sectionSix">
 				双向数据绑定
-				<figure class="highlight">
+				<figure className="highlight">
 					<figcaption>
 						<span className="title">v-model</span>
 						<a className="file">.vue</a>
@@ -179,7 +179,7 @@ const VueLearning = () => {
 
 			<div className="sectionSeven">
 				组件结构
-				<figure class="highlight">
+				<figure className="highlight">
 					<figcaption>
 						<span className="title">vue component structure</span>
 						<a className="file">.vue</a>
