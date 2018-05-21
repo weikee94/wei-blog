@@ -4,7 +4,6 @@ const ReactMarkdown = require('react-markdown');
 
 class CodeFigure extends React.Component {
     render() {
-        console.log(this.props.source);
         return (
             <div className="blog-code-figure">
                 <figure className="highlight">
