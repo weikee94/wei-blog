@@ -24,7 +24,12 @@ const Archives = (props) => {
                     <li style={{textDecoration: 'underline'}}>
                         <span>JS Basics</span>
                     </li>
-            </NavLink>
+                </NavLink>
+                <NavLink className="blog-archives__subtitle" to="/archives/5">
+                    <li style={{textDecoration: 'underline'}}>
+                        <span>React Learning</span>
+                    </li>
+                </NavLink>
             </ul>
         </div>
     );

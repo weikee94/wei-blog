@@ -5,6 +5,7 @@ import InitProject from '../post/InitProject';
 import Tools from '../post/Tools';
 import VueLearning from '../post/VueLearning';
 import JSLearning from '../post/JSLearning';
+import ReactLearning from '../post/ReactLearning';
 
 const ArchivesItem = (props) => {
     // console.log(props.match.params.id);
@@ -43,6 +44,15 @@ const ArchivesItem = (props) => {
         postContent = (
             <div className="blog-archives-items">
                 <JSLearning />
+                <NavLink className="back-home" to="/archives">
+                    <div className="back-home_title">Go Back</div>
+                </NavLink>
+            </div>
+        )
+    } else if (props.match.params.id == 5) {
+        postContent = (
+            <div className="blog-archives-items">
+                <ReactLearning />
                 <NavLink className="back-home" to="/archives">
                     <div className="back-home_title">Go Back</div>
                 </NavLink>
