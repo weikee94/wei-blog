@@ -3,11 +3,6 @@ import '../post/jsLearning.scss';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
 
-const arraySplice =
-'var arr = [ 1, 2, 3 ];\n' +
-'var temp;\n' +
-'temp = arr.splice(0, 1);  //1 \n';
-
 const arrSplice = `
 arrayObject.splice(start, num)
 var arr = [[ 1, 2, 3 ]];
@@ -104,8 +99,23 @@ while(str.indexOf(searchVal, index) != -1) {
 
 alert(sum); // 2
 
+`;
 
+const substringUsage= `
+    const myString = '01234';
+    // substring(start, stop) from start till stop-1
+    alert(myString.substring(1,3)); //12
+`;
 
+const splitUsage = `
+    // split (sep, length)
+    var str = '12345'
+    var arr = str.split(''); // [1, 2, 3, 4, 5]
+    var arr2 = str.split('', 2); // [1 ,2]
+
+    Example (reverse string)
+    var str = '123456';
+    var ans = str.split('').reverse().join(''); // 654321
 `;
 
 
@@ -118,6 +128,8 @@ class JSLearning extends React.Component {
                 <CodeFigure title="Delete Repeat" file="js" source={arrDeleteRepeat} />
                 <CodeFigure title="Sort Usage" file="js" source={sortUsage} />
                 <CodeFigure title="String Usage" file="js" source={stringUsage} />
+                <CodeFigure title="Substring Usage" file="js" source={substringUsage} />
+                <CodeFigure title="Split Usage" file="js" source={splitUsage}></CodeFigure>
             </div>
         )
     }

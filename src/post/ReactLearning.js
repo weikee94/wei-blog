@@ -134,6 +134,18 @@ const eventHandler = `
 
 `;
 
+const useComponentState = `
+
+`;
+
+const memoryLeak = `
+
+`;
+
+const reactClassComponent = `
+
+`;
+
 class ReactLearning extends React.Component {
     render() {
         return (
