@@ -1,7 +1,10 @@
 import React from 'react';
 import '../post/jsLearning.scss';
+import arrSpliceImg from '../images/arrSplice.png';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
+
+// const arrSpliceImg = require('../images/arrSplice.png');
 
 const arrSplice = `
 arrayObject.splice(start, num)
@@ -124,6 +127,7 @@ class JSLearning extends React.Component {
         return (
             <div className="JSLearning">
                 <p>JS Basics</p>
+                <img src={arrSpliceImg} alt="array splice" />
                 <CodeFigure title="Array Splice" file="js" source={arrSplice} />
                 <CodeFigure title="Delete Repeat" file="js" source={arrDeleteRepeat} />
                 <CodeFigure title="Sort Usage" file="js" source={sortUsage} />

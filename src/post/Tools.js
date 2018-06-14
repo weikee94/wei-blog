@@ -1,13 +1,21 @@
 import React from 'react';
 import '../post/tools.scss';
 
+const toolsTitle = (markdownSty, props) => {
+    return (
+        <div>
+            <div className={markdownSty.name}>
+                {props.title}
+            </div>
+        </div>
+    )
+}
+
 const Tools = () => {
     return (
         <div className="blog-tools">
             <div className="command-section">
-                <div className="markdown-title">
-                    GIT
-                </div>
+                {toolsTitle({name: 'markdown-title'},{title: 'GIT'})}
                 <div className="markdown-sect">
                     <ul>
                         <p>Set Upstream</p>
@@ -31,9 +39,7 @@ const Tools = () => {
                 </div>
             </div>
             <div className="tmux-section">
-                <div className="markdown-title">
-                    TMUX
-                </div>
+                {toolsTitle({name: 'markdown-title'},{title: 'TMUX'})}
                 <div className="markdown-sect">
                     <ul>
                         <p>Normal Usage</p>
@@ -59,6 +65,22 @@ const Tools = () => {
                         <li>main-horizontal</li>
                         <li>main-vertical</li>
                         <li>tiled</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="npm-section">
+                {toolsTitle({name: 'markdown-title'},{title: 'NPM'})}
+                <div className="markdown-sect">
+                    <ul>
+                        <li>
+                            <p>npm help - this will show all useful command</p>
+                        </li>
+                    <li>
+                        <p>npm repo repoName -  this will open the repo in browser</p>
+                    </li>
+                    <li>
+                        <p>npm home react - this will open browser and go to react page</p>
+                    </li>
                     </ul>
                 </div>
             </div>
