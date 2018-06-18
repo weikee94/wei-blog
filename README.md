@@ -1,3 +1,3 @@
 # Demo
 
-![Alt Text](https://i.imgur.com/qlO4N4m.gif)
+[Imgur](https://i.imgur.com/YNPhUIY.gifv)
