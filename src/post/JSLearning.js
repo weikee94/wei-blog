@@ -1,6 +1,11 @@
 import React from 'react';
 import '../post/jsLearning.scss';
-import arrSpliceImg from '../images/arrSplices.png'
+import arrSpliceImg from '../images/arrSplices.png';
+import deleteRepeatImg from '../images/deleteRepeat.png';
+import sortUsageImg from '../images/sortUsage.png';
+import stringUsageImg from '../images/stringUsage.png';
+import substringUsageImg from '../images/stringUsage.png';
+import splitUsageImg from '../images/splitUsage.png';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
 
@@ -129,13 +134,24 @@ class JSLearning extends React.Component {
         return (
             <div className="JSLearning">
                 <p>JS Basics</p>
-                <img src={arrSpliceImg} alt="array splice" width="100%" />
-                <CodeFigure title="Array Splice" file="js" source={arrSplice} />
+                <CodeFigure title="Array Splice" file="js" imgsrc={arrSpliceImg} />
+                <CodeFigure title="Delete Repeat" file="js" imgsrc={deleteRepeatImg} />
+                <CodeFigure title="Sort Usage" file="js" imgsrc={sortUsageImg} />
+                <CodeFigure title="String Usage" file="js" imgsrc={stringUsageImg} />
+                <CodeFigure title="Substring Usage" file="js" imgsrc={substringUsageImg} />
+                <CodeFigure title="Split Usage" file="js" imgsrc={splitUsageImg} />
+                {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
+                {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
+                <img src={sortUsageImg} alt="sort usage" width="100%" />
+                <img src={stringUsageImg} alt="string usage" width="100%" />
+                <img src={substringUsageImg} alt="substring usage" width="100%" />
+                <img src={splitUsageImg} alt="split usage" width="100%" /> */}
+                {/* <CodeFigure title="Array Splice" file="js" source={arrSplice} />
                 <CodeFigure title="Delete Repeat" file="js" source={arrDeleteRepeat} />
                 <CodeFigure title="Sort Usage" file="js" source={sortUsage} />
                 <CodeFigure title="String Usage" file="js" source={stringUsage} />
                 <CodeFigure title="Substring Usage" file="js" source={substringUsage} />
-                <CodeFigure title="Split Usage" file="js" source={splitUsage}></CodeFigure>
+                <CodeFigure title="Split Usage" file="js" source={splitUsage}></CodeFigure> */}
             </div>
         )
     }

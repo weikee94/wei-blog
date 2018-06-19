@@ -11,6 +11,7 @@ class CodeFigure extends React.Component {
                         <span className="title">{this.props.title}</span>
                         <a className="file">{this.props.file}</a>
                     </figcaption>
+                    <img src={this.props.imgsrc} width="100%" />
                     <table>
                         <tbody><tr>
                             <td className="code">
