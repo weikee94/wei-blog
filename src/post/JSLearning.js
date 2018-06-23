@@ -7,6 +7,7 @@ import stringUsageImg from '../images/stringUsage.png';
 import substringUsageImg from '../images/stringUsage.png';
 import splitUsageImg from '../images/splitUsage.png';
 import scopeUsageImg from '../images/scopeUsage.png';
+import argumentsUsageImg from '../images/argumentsUsage.png';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
 
@@ -142,6 +143,7 @@ class JSLearning extends React.Component {
                 <CodeFigure title="Substring Usage" file="js" imgsrc={substringUsageImg} />
                 <CodeFigure title="Split Usage" file="js" imgsrc={splitUsageImg} />
                 <CodeFigure title="Scope Usage" file="js" imgsrc={scopeUsageImg} />
+                <CodeFigure title="Arguments Usage" file="js" imgsrc={argumentsUsageImg} />
                 {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
                 {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
                 <img src={sortUsageImg} alt="sort usage" width="100%" />
