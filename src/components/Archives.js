@@ -20,11 +20,11 @@ const Archives = (props) => {
                         <span>Vue Basics</span>
                     </li>
                 </NavLink>
-                <NavLink className="blog-archives__subtitle" to="/archives/4">
+                {/* <NavLink className="blog-archives__subtitle" to="/archives/4">
                     <li style={{textDecoration: 'underline'}}>
                         <span>JS Basics</span>
                     </li>
-                </NavLink>
+                </NavLink> */}
                 <NavLink className="blog-archives__subtitle" to="/archives/5">
                     <li style={{textDecoration: 'underline'}}>
                         <span>React Learning</span>
