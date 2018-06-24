@@ -8,15 +8,15 @@ const Header = () => (
         <NavLink className="blog-header__subtitle" to="/" activeClassName="is-active" exact={true}>
           <li><span>Home</span></li>
         </NavLink>
-        <NavLink className="blog-header__subtitle" to="/about" activeClassName="is-active">
+        {/* <NavLink className="blog-header__subtitle" to="/about" activeClassName="is-active">
           <li><span>About</span></li>
-        </NavLink>
-        <NavLink className="blog-header__subtitle" to="/archives" activeClassName="is-active" exact={true}>
+        </NavLink> */}
+        {/* <NavLink className="blog-header__subtitle" to="/archives" activeClassName="is-active" exact={true}>
           <li><span>Archives</span></li>
-        </NavLink>
-        <NavLink className="blog-header__subtitle" to="/contact" activeClassName="is-active">
+        </NavLink> */}
+        {/* <NavLink className="blog-header__subtitle" to="/contact" activeClassName="is-active">
           <li><span>Contact</span></li>
-        </NavLink>
+        </NavLink> */}
       </ul>
   </header>
 )

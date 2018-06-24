@@ -41,7 +41,7 @@ const ArchivesItem = (props) => {
                 </NavLink>
             </div>
         )
-    } else if (props.match.params.id == 4) {
+    } else if (props.match.params.id == 9999) {
         postContent = (
             <div className="blog-archives-items">
                 <JSLearning />
