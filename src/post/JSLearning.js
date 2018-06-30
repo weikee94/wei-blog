@@ -11,6 +11,7 @@ import argumentsUsageImg from '../images/argumentsUsage.png';
 import cloneUsageImg from '../images/clone.png';
 import araryOperationImg from '../images/arrayOperations.png';
 import undefinedNullImg from '../images/undefinedNull.png';
+import objectReferencesImg from '../images/objectReferences.png';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
 
@@ -152,6 +153,7 @@ class JSLearning extends React.Component
                 <CodeFigure title="Clone Usage" file="js" imgsrc={cloneUsageImg} />
                 <CodeFigure title="Array Usage" file="js" imgsrc={araryOperationImg} />
                 <CodeFigure title="Undefined Null" file="js" imgsrc={undefinedNullImg} />
+                <CodeFigure title="Object References" file="js" imgsrc={objectReferencesImg} />
                 {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
                 {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
                 <img src={sortUsageImg} alt="sort usage" width="100%" />
