@@ -10,6 +10,7 @@ import scopeUsageImg from '../images/scopeUsage.png';
 import argumentsUsageImg from '../images/argumentsUsage.png';
 import cloneUsageImg from '../images/clone.png';
 import araryOperationImg from '../images/arrayOperations.png';
+import undefinedNullImg from '../images/undefinedNull.png';
 import CodeFigure from '../components/CodeFigure';
 const ReactMarkdown = require('react-markdown');
 
@@ -31,7 +32,7 @@ temp = arr.splice(1, 0, 100); // arr = [[1, 100, 2, 3]]
 `;
 
 
-const arrDeleteRepeat  = `
+const arrDeleteRepeat = `
 var arr = [[1, 2, 3, 3, 3, 5, 6, 8]];
 for (var i = 0; i< arr.length; i++) {
     for (var j = i + 1; j< arr.length; j++) {
@@ -113,7 +114,7 @@ alert(sum); // 2
 
 `;
 
-const substringUsage= `
+const substringUsage = `
     const myString = '01234';
     // substring(start, stop) from start till stop-1
     alert(myString.substring(1,3)); //12
@@ -131,8 +132,10 @@ const splitUsage = `
 `;
 
 
-class JSLearning extends React.Component {
-    render() {
+class JSLearning extends React.Component
+{
+    render()
+    {
         console.log(arrSpliceImg);
 
         return (
@@ -148,6 +151,7 @@ class JSLearning extends React.Component {
                 <CodeFigure title="Arguments Usage" file="js" imgsrc={argumentsUsageImg} />
                 <CodeFigure title="Clone Usage" file="js" imgsrc={cloneUsageImg} />
                 <CodeFigure title="Array Usage" file="js" imgsrc={araryOperationImg} />
+                <CodeFigure title="Undefined Null" file="js" imgsrc={undefinedNullImg} />
                 {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
                 {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
                 <img src={sortUsageImg} alt="sort usage" width="100%" />
