@@ -1,8 +1,8 @@
 import React from "react";
 import "../post/jsLearning.scss";
-import arrSpliceImg from "/dist/images/arrSplices.png";
-import deleteRepeatImg from "/dist/images/deleteRepeat.png";
-import sortUsageImg from "/dist/images/sortUsage.png";
+import arrSpliceImg from "../images/arrSplices.png";
+import deleteRepeatImg from "../images/deleteRepeat.png";
+import sortUsageImg from "../images/sortUsage.png";
 import stringUsageImg from "../images/stringUsage.png";
 import substringUsageImg from "../images/stringUsage.png";
 import splitUsageImg from "../images/splitUsage.png";

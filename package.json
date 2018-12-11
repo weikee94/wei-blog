@@ -10,12 +10,12 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "build:prodwebpack4": "NODE_ENV=production webpack",
+    "build:prodwebpack": "NODE_ENV=production webpack",
     "build": "webpack",
     "dev-server": "webpack-dev-server --env production",
     "dev": "npx webpack",
     "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prodwebpack4"
+    "heroku-postbuild": "npm run build:prodwebpack"
   },
   "keywords": [
     "Front-End",
