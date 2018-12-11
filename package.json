@@ -10,7 +10,7 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "build:prodwebpack": "--env production webpack",
+    "build:prodwebpack": "webpack --env production",
     "build": "webpack",
     "dev-server": "webpack-dev-server --env production",
     "dev": "npx webpack",
