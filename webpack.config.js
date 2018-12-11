@@ -7,6 +7,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+let pathsToClean = ["dist"];
+
+let cleanOptions = {
+  root: path.join(__dirname, "public")
+};
 module.exports = env => {
   const isProduction = env === "production";
   // const CSSExtract = new ExtractTextPlugin('styles.css');
@@ -38,18 +45,34 @@ module.exports = env => {
           //   })
         },
         {
-          test: /\.(jpe?g|png|gif|svg)$/i,
+          test: /\.(png|jp?g|gif|svg)$/,
           use: [
             {
-              loader: "url-loader",
+              loader: "file-loader",
               options: {
-                limit: 8000,
-                name: "images/[hash]-[name].[ext]",
-                publicPath: "/dist/"
+                name: "[name].[ext]",
+                outputPath: "/images/"
               }
             }
           ]
         }
+        // {
+        //   test: /\.(jpe?g|png|gif|svg)$/i,
+        //   use: [
+        //     {
+        //       loader: "url-loader",
+        //       options: {
+        //         limit: 8000,
+        //         name: "images/[hash]-[name].[ext]",
+        //         publicPath: "/dist/",
+        //         fallback: "file-loader"
+        //       }
+        //     },
+        //     {
+        //       loader: "image-webpack-loader"
+        //     }
+        //   ]
+        // }
       ]
     },
     // plugins: [CSSExtract],
@@ -61,7 +84,8 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
-      })
+      }),
+      new CleanWebpackPlugin(pathsToClean, cleanOptions)
     ],
     devtool: isProduction ? "cheap-module-source-map" : "inline-source-map",
     devServer: {

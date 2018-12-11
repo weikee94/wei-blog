@@ -43,6 +43,11 @@ class wpUpdate extends Component {
             <li>npm install style-loader --save-dev</li>
             <li>mini css extract plugin</li>
             <li>npm install --save-dev mini-css-extract-plugin</li>
+            <li>clean webpack plugin</li>
+            <li>npm i clean-webpack-plugin --save-dev</li>
+            <li>url loader for handling image those assets</li>
+            <li>compress images</li>
+            <li>npm install file-loader --save-dev</li>
           </ul>
         </div>
       </div>
