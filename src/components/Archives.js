@@ -35,6 +35,11 @@ const Archives = props => {
             <span>Webpack 4</span>
           </li>
         </NavLink>
+        <NavLink className="blog-archives__subtitle" to="/archives/7">
+          <li style={{ textDecoration: "underline" }}>
+            <span>Api Practice</span>
+          </li>
+        </NavLink>
       </ul>
     </div>
   );

@@ -14,6 +14,14 @@ class apiLearning extends Component {
             </div>
             <div>./mongod --dbpath ~/mongo-data</div>
           </li>
+          <li>
+            mkdir test-api (create test api folder)
+            <div>npm init (create package json file)</div>
+          </li>
+          <li>
+            install mongodb
+            <div>npm install mongodb@2.2.5 --save</div>
+          </li>
         </ul>
       </div>
     );
