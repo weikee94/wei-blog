@@ -1,19 +1,19 @@
-import React from 'react';
-import '../post/jsLearning.scss';
-import arrSpliceImg from '../images/arrSplices.png';
-import deleteRepeatImg from '../images/deleteRepeat.png';
-import sortUsageImg from '../images/sortUsage.png';
-import stringUsageImg from '../images/stringUsage.png';
-import substringUsageImg from '../images/stringUsage.png';
-import splitUsageImg from '../images/splitUsage.png';
-import scopeUsageImg from '../images/scopeUsage.png';
-import argumentsUsageImg from '../images/argumentsUsage.png';
-import cloneUsageImg from '../images/clone.png';
-import araryOperationImg from '../images/arrayOperations.png';
-import undefinedNullImg from '../images/undefinedNull.png';
-import objectReferencesImg from '../images/objectReferences.png';
-import CodeFigure from '../components/CodeFigure';
-const ReactMarkdown = require('react-markdown');
+import React from "react";
+import "../post/jsLearning.scss";
+import arrSpliceImg from "/dist/images/arrSplices.png";
+import deleteRepeatImg from "/dist/images/deleteRepeat.png";
+import sortUsageImg from "/dist/images/sortUsage.png";
+import stringUsageImg from "../images/stringUsage.png";
+import substringUsageImg from "../images/stringUsage.png";
+import splitUsageImg from "../images/splitUsage.png";
+import scopeUsageImg from "../images/scopeUsage.png";
+import argumentsUsageImg from "../images/argumentsUsage.png";
+import cloneUsageImg from "../images/clone.png";
+import araryOperationImg from "../images/arrayOperations.png";
+import undefinedNullImg from "../images/undefinedNull.png";
+import objectReferencesImg from "../images/objectReferences.png";
+import CodeFigure from "../components/CodeFigure";
+const ReactMarkdown = require("react-markdown");
 
 // var arrSpliceImg = require('../images/arrSplice.png');
 
@@ -31,7 +31,6 @@ temp = arr.splice(0, 1, 5); // arr = [[5, 2, 3]]
 // add
 temp = arr.splice(1, 0, 100); // arr = [[1, 100, 2, 3]]
 `;
-
 
 const arrDeleteRepeat = `
 var arr = [[1, 2, 3, 3, 3, 5, 6, 8]];
@@ -132,43 +131,56 @@ const splitUsage = `
     var ans = str.split('').reverse().join(''); // 654321
 `;
 
+class JSLearning extends React.Component {
+  render() {
+    console.log(arrSpliceImg);
 
-class JSLearning extends React.Component
-{
-    render()
-    {
-        console.log(arrSpliceImg);
-
-        return (
-            <div className="JSLearning">
-                <p>JS Basics</p>
-                <CodeFigure title="Array Splice" file="js" imgsrc={arrSpliceImg} />
-                <CodeFigure title="Delete Repeat" file="js" imgsrc={deleteRepeatImg} />
-                <CodeFigure title="Sort Usage" file="js" imgsrc={sortUsageImg} />
-                <CodeFigure title="String Usage" file="js" imgsrc={stringUsageImg} />
-                <CodeFigure title="Substring Usage" file="js" imgsrc={substringUsageImg} />
-                <CodeFigure title="Split Usage" file="js" imgsrc={splitUsageImg} />
-                <CodeFigure title="Scope Usage" file="js" imgsrc={scopeUsageImg} />
-                <CodeFigure title="Arguments Usage" file="js" imgsrc={argumentsUsageImg} />
-                <CodeFigure title="Clone Usage" file="js" imgsrc={cloneUsageImg} />
-                <CodeFigure title="Array Usage" file="js" imgsrc={araryOperationImg} />
-                <CodeFigure title="Undefined Null" file="js" imgsrc={undefinedNullImg} />
-                <CodeFigure title="Object References" file="js" imgsrc={objectReferencesImg} />
-                {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
-                {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
+    return (
+      <div className="JSLearning">
+        <p>JS Basics</p>
+        <CodeFigure title="Array Splice" file="js" imgsrc={arrSpliceImg} />
+        <CodeFigure title="Delete Repeat" file="js" imgsrc={deleteRepeatImg} />
+        <CodeFigure title="Sort Usage" file="js" imgsrc={sortUsageImg} />
+        <CodeFigure title="String Usage" file="js" imgsrc={stringUsageImg} />
+        <CodeFigure
+          title="Substring Usage"
+          file="js"
+          imgsrc={substringUsageImg}
+        />
+        <CodeFigure title="Split Usage" file="js" imgsrc={splitUsageImg} />
+        <CodeFigure title="Scope Usage" file="js" imgsrc={scopeUsageImg} />
+        <CodeFigure
+          title="Arguments Usage"
+          file="js"
+          imgsrc={argumentsUsageImg}
+        />
+        <CodeFigure title="Clone Usage" file="js" imgsrc={cloneUsageImg} />
+        <CodeFigure title="Array Usage" file="js" imgsrc={araryOperationImg} />
+        <CodeFigure
+          title="Undefined Null"
+          file="js"
+          imgsrc={undefinedNullImg}
+        />
+        <CodeFigure
+          title="Object References"
+          file="js"
+          imgsrc={objectReferencesImg}
+        />
+        {/* <img src={arrSpliceImg} alt="array splice" width="100%" /> */}
+        {/* <img src={deleteRepeatImg} alt="delete repeat" width="100%" />
                 <img src={sortUsageImg} alt="sort usage" width="100%" />
                 <img src={stringUsageImg} alt="string usage" width="100%" />
                 <img src={substringUsageImg} alt="substring usage" width="100%" />
                 <img src={splitUsageImg} alt="split usage" width="100%" /> */}
-                {/* <CodeFigure title="Array Splice" file="js" source={arrSplice} />
+        {/* <CodeFigure title="Array Splice" file="js" source={arrSplice} />
                 <CodeFigure title="Delete Repeat" file="js" source={arrDeleteRepeat} />
                 <CodeFigure title="Sort Usage" file="js" source={sortUsage} />
                 <CodeFigure title="String Usage" file="js" source={stringUsage} />
                 <CodeFigure title="Substring Usage" file="js" source={substringUsage} />
                 <CodeFigure title="Split Usage" file="js" source={splitUsage}></CodeFigure> */}
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default JSLearning;
