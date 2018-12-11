@@ -138,6 +138,7 @@ class JSLearning extends React.Component {
     return (
       <div className="JSLearning">
         <p>JS Basics</p>
+        <img src="/images/clone.png" alt="weikee" />
         <CodeFigure title="Array Splice" file="js" imgsrc={arrSpliceImg} />
         <CodeFigure title="Delete Repeat" file="js" imgsrc={deleteRepeatImg} />
         <CodeFigure title="Sort Usage" file="js" imgsrc={sortUsageImg} />

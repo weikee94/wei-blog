@@ -8,6 +8,7 @@ import JSLearning from "../post/JSLearning";
 import ReactLearning from "../post/ReactLearning";
 import Playground from "../post/Playground";
 import WpUpdate from "../post/wpUpdate";
+import ApiLearning from "../post/apiLearning";
 
 const ArchivesItem = props => {
   // console.log(props.match.params.id);
@@ -64,6 +65,15 @@ const ArchivesItem = props => {
     postContent = (
       <div className="blog-archives-items">
         <WpUpdate />
+        <NavLink className="back-home" to="/archives">
+          <div className="back-home_title">Go Back</div>
+        </NavLink>
+      </div>
+    );
+  } else if (props.match.params.id == 7) {
+    postContent = (
+      <div className="blog-archives-items">
+        <ApiLearning />
         <NavLink className="back-home" to="/archives">
           <div className="back-home_title">Go Back</div>
         </NavLink>
