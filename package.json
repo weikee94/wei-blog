@@ -14,7 +14,7 @@
     "dev-server": "webpack-dev-server --env production",
     "dev": "npx webpack",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [
     "Front-End",
