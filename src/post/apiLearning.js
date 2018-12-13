@@ -28,6 +28,16 @@ class apiLearning extends Component {
             install express and body-parser(allow us sent json to the server)
           </li>
           <li>npm i express@4.14.0 body-parser@1.15.2 --save</li>
+
+          <li>deploy api to heroku</li>
+          <li>
+            create heroku
+            <div>heroku create</div>
+          </li>
+          <li>
+            use addons options to create mongolab
+            <div>heroku addons:create mongolab:sandbox</div>
+          </li>
         </ul>
       </div>
     );
