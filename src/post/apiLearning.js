@@ -38,6 +38,22 @@ class apiLearning extends Component {
             use addons options to create mongolab
             <div>heroku addons:create mongolab:sandbox</div>
           </li>
+          <li>
+            find out what mongodb uri using
+            <div>heroku config:get MONGODB_URI</div>
+          </li>
+          <li>
+            email validation package
+            <div>npm install validator@5.6.0 --save</div>
+          </li>
+          <li>
+            JSON WEb token
+            <div>npm i jsonwebtoken@7.1.9 --save</div>
+          </li>
+          <li>
+            install hashing password
+            <div>npm i bcryptjs@2.3.0 --save</div>
+          </li>
         </ul>
       </div>
     );
