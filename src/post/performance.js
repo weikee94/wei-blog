@@ -4,7 +4,7 @@ class Performance extends Component {
   render() {
     return (
       <div>
-        Performance
+        Performance (video 45)
         <div>
           HTML SECTION
           <ul>
@@ -19,6 +19,15 @@ class Performance extends Component {
             <li>Above the fold loading</li>
             <li>Media attributes</li>
             <li>Less specifity</li>
+          </ul>
+        </div>
+        <div>
+          JS SECTION
+          <ul>
+            <li>Load script asynchronously</li>
+            <li>Defer loading of scripts</li>
+            <li>Minimize DOM manipulation</li>
+            <li>Avoid long running js</li>
           </ul>
         </div>
       </div>

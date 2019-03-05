@@ -4,7 +4,11 @@ const app = express();
 const publicPath = path.join(__dirname, "..", "public", "dist");
 const port = process.env.PORT || 3000;
 
+const compression = require("compression");
+
 console.log("Public path: ", publicPath);
+
+app.use(compression());
 
 app.use(express.static(publicPath));
 
