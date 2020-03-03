@@ -1,0 +1,27 @@
+.blog-header {
+  max-width: 120rem;
+  margin: 0 auto;
+  &__title {
+    padding-left: 40px;
+    color: $color-text;
+    font-size: $font-size-large-b;
+    display: inline-block;
+  }
+  ul {
+    list-style-type: none;
+    display: inline-block;
+    .blog-header__subtitle {
+      color: $color-categories-title;
+      font-size: $font-size-small;
+      letter-spacing: 0.01rem;
+      li {
+        margin-right: 15px;
+        border-right: 1px dotted $color-categories-title;
+        display: inline-block;
+        span {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

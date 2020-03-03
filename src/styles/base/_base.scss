@@ -1,0 +1,95 @@
+@import "variable.scss";
+
+html,
+body {
+  background: $color-background;
+  font-family: "Menlo", "Meslo LG", monospace;
+  font-size: 14px;
+}
+
+.wei-wrapper {
+  min-height: 100vh;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+.blog-archives {
+  ul {
+    list-style-type: none;
+    .blog-archives__subtitle {
+      color: $color-text;
+      text-decoration-line: none;
+    }
+  }
+}
+
+.blog-home {
+  color: $color-text;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.blog-about {
+  color: $color-text;
+  padding-left: 40px;
+}
+
+.blog-contact {
+  color: $color-text;
+  padding-left: 40px;
+}
+
+.blog-archives-items {
+  color: $color-text;
+  padding-left: 40px;
+  padding-right: 40px;
+  .back-home {
+    text-decoration-line: none;
+    .back-home_title {
+      color: $color-text;
+      font-size: $font-size-small;
+    }
+  }
+  .JSLearning,
+  .ReactLearning {
+    .blog-code-figure {
+      .highlight {
+        margin: 1rem 0;
+        padding: 10px 15px;
+        border-radius: 4px;
+        background: #212326;
+
+        .title {
+          color: #666;
+          font-size: 0.9em;
+        }
+
+        .file {
+          float: right;
+          color: #666;
+          font-style: italic;
+          font-size: 0.8em;
+
+          &:hover {
+            background-image: linear-gradient(
+              transparent,
+              transparent 10px,
+              #d480aa 10px,
+              #d480aa
+            );
+            background-position: bottom;
+            background-size: 100% 6px;
+            background-repeat: repeat-x;
+          }
+        }
+
+        .code {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
