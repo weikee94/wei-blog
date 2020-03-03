@@ -86,8 +86,8 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
-      }),
-      new CleanWebpackPlugin(pathsToClean, cleanOptions)
+      })
+      // new CleanWebpackPlugin(pathsToClean, cleanOptions)
     ],
     devtool: isProduction ? "cheap-module-source-map" : "inline-source-map",
     devServer: {
