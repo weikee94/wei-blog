@@ -93,7 +93,8 @@ module.exports = env => {
     devServer: {
       contentBase: path.join(__dirname, "public"),
       historyApiFallback: true,
-      publicPath: "/dist/"
+      publicPath: "/dist/",
+      allowedHosts: ["www.wkee0701.com"]
     },
     mode: "production"
   };
