@@ -23,7 +23,8 @@ module.exports = env => {
     mode: "development",
     output: {
       path: path.join(__dirname, "public", "dist"),
-      filename: "[name]-[hash].bundle.js",
+      // filename: "[name]-[hash].bundle.js",
+      filename: "bundle.js",
       publicPath: "/"
     },
     module: {
