@@ -7,6 +7,15 @@ body {
   font-size: 14px;
 }
 
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-content {
+  padding-bottom: 2.5rem;
+}
+
 .wei-wrapper {
   min-height: 100vh;
 }
