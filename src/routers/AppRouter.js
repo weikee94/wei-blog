@@ -10,6 +10,8 @@ import NotFound from "../components/NotFound";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NoteApp from "../components/NoteApp";
+import Others from "../components/Others";
+import Demo from "../components/Demo";
 
 // stateless function component
 const AppRouter = () => (
@@ -24,7 +26,8 @@ const AppRouter = () => (
           <Route path="/archives/:id" component={ArchivesItem} />
           <Route path="/contact" component={Contact} />
           <Route path="/noteapp" component={NoteApp} />
-
+          <Route path="/others" component={Others}></Route>
+          <Route path="/demo" component={Demo}></Route>
           <Route component={NotFound} />
         </Switch>
       </div>
