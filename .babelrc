@@ -17,3 +17,5 @@
     ]
   ]
 }
+// for react lazy import
+// ["@babel/plugin-syntax-dynamic-import"],
