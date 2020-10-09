@@ -120,3 +120,14 @@
     flex-direction: column;
   }
 }
+
+.blogTitle {
+  color: #0070f3;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.date {
+  color: #666;
+  line-height: 1.5;
+}

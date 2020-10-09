@@ -1,12 +1,19 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Me - Wei Kee Haw</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="keywords" content="wkhaw, developer, blog" />
+        <meta
+          name="description"
+          content="Looking for weikee? Nice to meet you!"
+        />
       </Head>
 
       <main className={styles.main}>
@@ -15,13 +22,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Hi, I'm Wei Kee.
-          <code className={styles.code}>
-            I like to collaborate with people and able to work and communicate
-            well with different people from various background. Tend to be a
-            front-end developer and experienced working in software development
-            life cycle like Agile and etc.
-          </code>
+          Hello, I'm Wei Kee. I'm a software engineer.
         </p>
 
         <div className={styles.grid}>
@@ -53,17 +54,18 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <ul>
+      <li>
+        <Link href="/post/web-performance">
+          <a className={styles.blogTitle}>Web Performance</a>
+        </Link>
+      </li>
+    
+    </ul>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <p>© Wei Kee Haw</p>
       </footer>
     </div>
   );
