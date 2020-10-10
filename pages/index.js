@@ -47,6 +47,11 @@ export default function Home() {
           <a className={styles.blogTitle}>React Router Refresh</a>
         </Link>
       </li>
+      <li>
+        <Link href="/post/add-subdomain">
+          <a className={styles.blogTitle}>Add Subdomain</a>
+        </Link>
+      </li>
     
     </ul>
       </main>
