@@ -8,7 +8,8 @@ class XcodeError extends Component {
         return (
             <div className={styles.container}>
                  <Head>
-                    <title>Xcode Error</title>
+                    <title>Xcode Error</title>	
+
                 </Head>
                 <main className={styles.main}>
                     <article>
@@ -20,6 +21,8 @@ class XcodeError extends Component {
                             <code>xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance</code>
                         </p>
                         <img className={styles.postimage} src="/xcode-select-error.png" alt="xcode-select-error" />
+
+                        
                     </article>
                 </main>
             </div>
