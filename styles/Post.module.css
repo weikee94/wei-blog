@@ -32,3 +32,8 @@
 .footer a {
   color: #0070f3;
 }
+
+.postimage {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}

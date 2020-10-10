@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/post/web-performance": "pages/post/web-performance.js",
+  "/post/xcode-error": "pages/post/xcode-error.js",
   "/": "pages/index.js"
 }

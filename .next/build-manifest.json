@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/post/web-performance": [
+    "/post/xcode-error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/post/web-performance.js"
+      "static/chunks/pages/post/xcode-error.js"
     ]
   },
   "ampFirstPages": []

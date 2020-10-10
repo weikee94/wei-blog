@@ -60,6 +60,16 @@ export default function Home() {
           <a className={styles.blogTitle}>Web Performance</a>
         </Link>
       </li>
+      <li>
+        <Link href="/post/rn-android">
+          <a className={styles.blogTitle}>RN Android</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/post/xcode-error">
+          <a className={styles.blogTitle}>Xcode Error</a>
+        </Link>
+      </li>
     
     </ul>
       </main>
