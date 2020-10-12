@@ -18,15 +18,19 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">wei-blog</a>
+          Hello
         </h1>
 
-        <p className={styles.description}>
-          Hello, I'm Wei Kee. I'm a software engineer.
+        <p className={styles.desc}>
+          I'm <strong>Wei Kee</strong>. I'm a software engineer. I've been working in tech as a programmer since 2016. In my spare time, you can catch me cooking, playing guitar, or on the way to running! 
+        </p>
+
+        <p className={styles.desc}>
+          Check out my <a href="https://www.linkedin.com/in/wei-kee-haw-2806b8109/">LinkedIn</a> to get to know me a bit better, or <a href="mailto:weikee070194@gmail.com">email</a> and say hi. Also, I'll be on the job hunt soon and am open to hearing about new opportunities!
         </p>
 
         
-        <ul>
+        {/* <ul>
       <li>
         <Link href="/post/web-performance">
           <a className={styles.blogTitle}>Web Performance</a>
@@ -53,7 +57,7 @@ export default function Home() {
         </Link>
       </li>
     
-    </ul>
+    </ul> */}
       </main>
 
       <footer className={styles.footer}>
